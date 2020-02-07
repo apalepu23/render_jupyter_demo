@@ -8,4 +8,4 @@ RUN conda env create -f environment.yml
 SHELL ["conda", "run", "-n", "render_jupyter_demo", "/bin/bash", "-c"]
 
 # The code to run when container is started:
-ENTRYPOINT ["conda", "run", "-n", "render_jupyter_demo", "jupyter", "notebook"]
+ENTRYPOINT ["conda", "run", "-n", "render_jupyter_demo", "jupyter", "notebook" "--ip=0.0.0.0", "--port=8080"]
