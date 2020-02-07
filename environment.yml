@@ -1,0 +1,20 @@
+name: render_jupyter_demo
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - ipython=6.4.0
+  - ipywidgets=7.5.1
+  - jupyter=1.0.0
+  - pip=9.0.1
+  - python=3.6.4
+  - requests=2.22.0
+  - matplotlib=2.2.2
+  - numpy=1.14.0
+  - pandas=0.25.3
+  - path=13.1.0
+  - pip:
+    - cufflinks==0.17.0
+    - plotly==4.4.1
+prefix: /anaconda3/envs/render_jupyter_demo
+
